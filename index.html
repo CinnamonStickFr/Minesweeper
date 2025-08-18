@@ -38,9 +38,15 @@
     margin:0 auto;
     box-sizing:border-box;
   }
-  header{display:flex;gap:12px;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;}
+  header{display:flex;gap:12px;align-items:center;justify-content:center;margin-bottom:12px;flex-wrap:wrap;}
   h1{font-size:20px;margin:0}
-  .controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  
+  .controls{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  flex-wrap:wrap;
+  }
   
   /* Better dropdown styling */
   select {
@@ -139,9 +145,12 @@
     display:flex;
     gap:12px;
     align-items:center;
+	justify-content: center;
     flex-wrap:wrap;
   }
   .board-wrap{
+	display: flex;
+	justify-content: center;
     margin-top:14px;
     overflow:auto;
     width:100%;
@@ -183,7 +192,10 @@
     color:#5b0b0b;
   }
   .info{
-    display:flex;gap:8px;align-items:center;
+    display:flex;
+	gap:8px;
+	align-items:center;
+	justify-content:center;
   }
   .counter {
     background: var(--tile);
@@ -226,7 +238,6 @@
       <div class="counter" id="mineCount">Mines: 10</div>
       <div class="counter" id="timer">Time: 0s</div>
     </div>
-    <div style="flex:1"></div>
     <div style="text-align:right">
       <div id="message" class="small"></div>
     </div>
